@@ -1,0 +1,170 @@
+---
+title: Firebase API
+sidebar_position: 3
+---
+
+# 🔥 Firebase API Setup Guide
+
+**This guide will walk you through the steps to configure the Firebase API for use with Fleet Stack, including setting up your Firebase project, generating API keys, and integrating them into your Fleet Stack application.**
+
+---
+
+## 📘 Overview
+
+Firebase is a powerful platform for developing web and mobile applications, offering services such as real-time databases, authentication, and notifications. In this guide, we'll walk you through setting up Firebase Cloud Messaging (FCM) for use within Fleet Stack, enabling push notifications and messaging services.
+
+---
+
+## 🚀 Quick Steps
+
+### Prerequisites:
+
+- A **Google account** to access Firebase.
+- A **Fleet Stack application** already installed.
+
+### Estimated Time: 10–15 minutes
+
+---
+
+## 📹 Video Tutorial
+
+For a visual walkthrough of the process, watch the video tutorial below:
+
+<div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/XgjWNQj7nQ8?si=pjwlmmio6O5R1R2n"
+    title="Firebase API Setup Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
+
+---
+
+## 📝 Step-by-Step Instructions
+
+---
+
+### **Step 1: Set Up a Firebase Project**
+
+You first need to create a Firebase project in the Firebase Console.
+
+#### Tasks to Complete:
+
+1. **Visit the Firebase Console**:
+   - Open the [Firebase Console](https://console.firebase.google.com/).
+2. **Add a Project**:
+   - Click on the **ADD PROJECT** button.
+   - Follow the on-screen instructions to create your project.
+     - Provide a **project name**.
+     - Uncheck the **Google Analytics account** option if prompted.
+
+💡 **Tip**: Choose a project name that matches your Fleet Stack app to make it easier to identify later.
+
+---
+
+### **Step 2: Configure Project Settings**
+
+Once your project is set up, you need to configure the settings for Cloud Messaging.
+
+#### Tasks to Complete:
+
+1. Click the **gear icon** in the Firebase Console to go to **Project Settings**.
+2. Open a new tab and go to the **Cloud Messaging** section in the settings.
+3. **Enable the Cloud Messaging API Key**:
+   - Click the **Enable** button to activate the Cloud Messaging API key.
+
+💡 **Tip**: This API key is crucial for sending messages from your server to Firebase services.
+
+---
+
+### **Step 3: Generate the Key Pair**
+
+Now, you'll generate the API key needed for your Firebase integration.
+
+#### Tasks to Complete:
+
+1. In the **Cloud Messaging** tab, click the **Generate Key Pair** button.
+2. Copy the **API Key** value from the **Web Push Certificate** section.
+
+💡 **Tip**: Keep this API key secure, as it provides access to Firebase messaging services.
+
+---
+
+### **Step 4: Update Configuration Files**
+
+You need to update your Fleet Stack project with the Firebase API key.
+
+#### Tasks to Complete:
+
+1. **Navigate to the Fleet Stack web root folder**:
+   - Go to `This PC > Local Disk (C:) > Program Files (x86) > Aiq > FleetStack > web > wwwroot`.
+2. **Edit the following files** using a text editor (such as Sublime Text):
+   - Firebase_Config_init
+   - firebase-messaging-sw
+3. **Paste the copied API Key** into the Firebase configuration file.
+
+💡 **Tip**: Ensure you paste the key in the correct sections within each file to enable proper integration.
+
+---
+
+### **Step 5: Register the Web Application**
+
+You need to register your Fleet Stack application in Firebase.
+
+#### Tasks to Complete:
+
+1. In the **Firebase Console**, click on the **Web Icon** to add a web app.
+2. **Register the Web Application**:
+   - Enter the name of the web application.
+   - Click on **Register**.
+
+💡 **Tip**: Make sure the app name matches your Fleet Stack project for easier management.
+
+---
+
+### **Step 6: Add Firebase SDK**
+
+Firebase SDK is necessary for the web app to interact with Firebase services.
+
+#### Tasks to Complete:
+
+1. In the **Firebase Console**, navigate to the **Firebase SDK** section for your registered web app.
+2. **Copy the SDK code** provided by Firebase.
+3. **Paste this SDK code** into the Firebase configuration and messaging files in your Fleet Stack project folder.
+
+💡 **Tip**: This code connects your Fleet Stack application with Firebase services.
+
+---
+
+### **Step 7: Enable Server Key in Fleet Stack**
+
+Finally, you need to configure the Firebase Server Key in your Fleet Stack app to enable notifications.
+
+#### Tasks to Complete:
+
+1. Go back to the **Firebase Project Settings**.
+2. In the **Cloud Messaging** section, copy the **Server Key**.
+3. In the **Fleet Stack Super Admin Panel**, navigate to the **Configuration Setup** section.
+4. **Paste the Server Key** into the configuration setup.
+
+💡 **Tip**: The Server Key is essential for sending notifications to Firebase, ensuring secure communication between your app and Firebase services.
+
+---
+
+## 🚨 Important Notes
+
+- **Monitor API Usage**: Keep track of your Firebase API usage in the Firebase Console to avoid unexpected charges.
+- **Secure Your API Key**: Never expose your API key publicly to prevent unauthorized access.
+- **Test Notifications**: Once set up, test your Firebase push notifications to ensure they are working properly.
+
+---
+
+## Conclusion
+
+You have now successfully configured the Firebase API for use with Fleet Stack. Your app is ready to use Firebase services like push notifications and messaging. Always ensure to monitor API usage to stay within your limits.
+
+---

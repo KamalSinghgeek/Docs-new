@@ -1,0 +1,47 @@
+---
+title: Manage Media Devices
+description: '"Effectively manage media devices on Android using Dyte''s documentation'
+sidebar_position: 3
+tags:
+  - android-core
+  - local-user
+  - self
+  - self events
+---
+
+# Manage Media Devices
+
+Media devices represents the hardware for the camera, microphone and speaker
+devices. To get the list of media devices that are currently being used, you can
+use the following methods:
+
+```kotlin
+// Get all audio devices
+val audioDevices: List<DyteAudioDevice> = meeting.self.getAudioDevices();
+
+// Get all video devices
+val videoDevices: List<DyteVideoDevice> = meeting.self.getVideoDevices();
+```
+
+## Set audio device
+
+To set a device as an active device, you can call `setAudioDevice` method. This
+takes a `DyteAudioDevice` object.
+
+```kotlin
+meeting.self.setAudioDevice(device);
+```
+
+## Set video device
+
+To set a video device as an active device, you can call `setVideoDevice` method.
+This takes a `DyteVideoDevice` object.
+
+```kotlin
+meeting.self.setVideoDevice(device);
+```
+
+<head>
+  <title>Android Core Manage Media Devices</title>
+  <meta name="description" content="Effectively manage media devices on Android using Dyte's documentation, ensuring seamless user experiences."/>
+</head>

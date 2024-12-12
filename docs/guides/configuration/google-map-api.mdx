@@ -1,0 +1,156 @@
+---
+title: Google Map API
+sidebar_position: 2
+---
+
+# 🗺️ Google Map API Setup Guide
+
+**This guide helps you create and enable a Google Maps API key with reverse geocoding functionality. This key allows you to integrate Google Maps services, such as location services, into your application.**
+
+---
+
+## 📘 Overview
+
+Google Maps APIs offer powerful functionality, such as geocoding and reverse geocoding, that can be integrated into various applications. This guide walks you through the process of setting up a Google Maps API key and securing it for safe usage.
+
+---
+
+## 🚀 Quick Steps
+
+### Prerequisites:
+
+- A **Google Cloud Platform (GCP) account** to access the Google Cloud Console.
+- A **valid billing account** associated with your GCP account.
+
+### Estimated Time: 10–15 minutes
+
+---
+
+## 📹 Video Tutorial
+
+For a visual walkthrough of the process, watch the video tutorial below:
+
+<div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/CubXwM2wcZY?si=W428fv_jfxuvH-I9"
+    title="Google Maps API Setup Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
+
+---
+
+## 📝 Step-by-Step Instructions
+
+---
+
+### **Step 1: Open Google Cloud Console**
+
+To get started, you need to access the Google Cloud Console where you will manage your API and other resources.
+
+#### Tasks to Complete:
+
+1. **Go to the Google Cloud Console**:
+2. **Log into your account**:
+   - Use your **GCP credentials** to sign in. If you don’t have a Google Cloud account, you’ll need to create one.
+
+💡 **Tip**: Make sure you are logged in with an account that has appropriate permissions to create projects and manage APIs.
+
+---
+
+### **Step 2: Create a New Project**
+
+You need to create a new project within Google Cloud Console to enable the Google Maps API.
+
+#### Tasks to Complete:
+
+1. In the **Google Cloud Console**, click on the **project drop-down menu** at the top of the page.
+2. Select **Create New Project** from the menu.
+3. Provide a **name for your project** and click **Create**.
+
+💡 **Tip**: Choose a project name that helps you easily identify it later, especially if you are managing multiple projects.
+
+---
+
+### **Step 3: Enable Geocoding API**
+
+The Geocoding API enables converting addresses into geographic coordinates, and reverse geocoding converts geographic coordinates into readable addresses.
+
+#### Tasks to Complete:
+
+1. In the **Google Cloud Console**, navigate to **APIs & Services** > **Library**.
+2. Search for **Geocoding API** in the library.
+3. Click on the **Geocoding API** and then click the **Enable** button.
+
+💡 **Tip**: Enabling this API is essential for reverse geocoding functionality, which can be used to retrieve addresses from coordinates.
+
+---
+
+### **Step 4: Create an API Key**
+
+After enabling the API, the next step is to create an API key, which will be used to authenticate requests made to the Google Maps API.
+
+#### Tasks to Complete:
+
+1. Navigate to **APIs & Services** > **Credentials**.
+2. Click the **Create Credentials** button, then select **API Key**.
+
+💡 **Tip**: Keep your API key secure to prevent unauthorized use.
+
+---
+
+### **Step 5: Restrict the API Key**
+
+To ensure your API key is used only by authorized websites or applications, you can set restrictions.
+
+#### Tasks to Complete:
+
+1. Under **Application Restrictions**, choose **HTTP Referrers (Websites)**.
+2. Add the websites or **IP addresses** from which you intend to make API requests.
+   - If using the API key in a web application, add your website's URL.
+
+💡 **Tip**: Restricting your API key helps protect your account from misuse and unnecessary charges.
+
+---
+
+### **Step 6: Enable Billing**
+
+Google Maps API services are not free, and you need to set up a billing account to be able to use the services.
+
+#### Tasks to Complete:
+
+1. Navigate to the **Billing** section in Google Cloud Console.
+2. **Link a billing account** to your project to activate API usage.
+
+💡 **Tip**: Make sure your billing account is set up with a valid payment method to avoid service interruptions.
+
+---
+
+### **Final Step: Use the API Key**
+
+Once your API key is created and secured, you can use it to access Google Maps services, including the Reverse Geocoding API.
+
+#### Tasks to Complete:
+
+1. Insert the **API Key** in your application’s code where you need to access Google Maps services.
+2. Ensure you monitor your API usage to avoid exceeding quotas or incurring unexpected charges.
+
+💡 **Tip**: Google Cloud provides tools to monitor usage and set up alerts to stay within your budget.
+
+---
+
+## 🚨 Important Notes
+
+- **Monitor Usage**: Keep track of your API key’s usage through the Google Cloud Console.
+- **Quota Limits**: Google Maps APIs have quotas. Be sure to monitor your usage to avoid unexpected charges.
+- **Billing Alerts**: Set up billing alerts in Google Cloud to avoid any surprises on your billing.
+
+---
+
+Now you have a fully functional Google Maps API key with reverse geocoding functionality that you can use to integrate location services into your applications. Remember to keep your key secure and monitor usage to stay within your budget.
+
+---

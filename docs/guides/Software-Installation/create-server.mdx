@@ -1,0 +1,216 @@
+---
+title: Create Cloud Server
+sidebar_position: 1
+---
+
+# 🌩️ Create Your Cloud Server
+
+**Build a secure, scalable, and robust cloud server on AWS. This step-by-step guide ensures you configure your instance like a pro.**
+
+---
+
+## 📘 Quick Overview
+
+Setting up your server involves:
+
+- **Accessing AWS EC2** to manage compute resources.
+- **Launching and configuring an instance** tailored to your needs.
+- **Setting up security** for safe and authorized access.
+- **Connecting to your instance** remotely.
+
+⏱️ **Estimated Time**: 10–15 minutes
+
+---
+
+## 🚀 Prerequisites
+
+Before starting, ensure you have:
+
+- **An active AWS account.**
+- **A stable internet connection.**
+- **Remote Desktop Client** (for Windows instances).
+- Basic knowledge of AWS terms like EC2, key pairs, and security groups.
+
+---
+## 🎥 Video Tutorial
+
+Watch a step-by-step video guide for a visual walkthrough:
+
+<div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/J6YWqugB_z0?si=eL-G89C1iJry-mLW"
+    title="AWS Server and Fleet Stack Installation Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
+--- ---
+## 📂 Step-by-Step Guide
+
+---
+
+### **Step 1: Log in to AWS**
+
+To create a cloud server, you'll first need to access AWS, the platform where the servers are hosted. This step involves logging into your account to use the tools available.
+
+1. Navigate to the [AWS Management Console](https://aws.amazon.com/console/).
+2. Enter your credentials and sign in to access the AWS dashboard.
+
+💡 **Pro Tip**: Use the AWS Console mobile app for on-the-go management.
+
+---
+
+### **Step 2: Open the EC2 Dashboard**
+
+AWS EC2 (Elastic Compute Cloud) is the service where your virtual servers are created and managed. You'll need to navigate to this section to start building your server.
+
+1. From the top menu, click **Services**.
+2. Under **Compute**, select **EC2**.
+3. Navigate to the **Instances** section to manage existing or create new instances.
+
+---
+
+### **Step 3: Launch a New Instance**
+
+An instance is your virtual server. Launching one means you're creating a computer in the cloud, specifying its size and operating system, just like setting up a new PC.
+
+#### Configuration Steps:
+
+1. Click **Launch Instance**.
+2. Fill in the following details:
+
+   - **Name**: Choose a recognizable name (e.g., `MyAppServer`).
+   - **OS**: Select your preferred operating system:
+     - **Windows Server** (default for Remote Desktop).
+     - **Ubuntu** or **Amazon Linux** for Linux users.
+   - **Instance Type**:
+     - Start with `t2.micro` (Free Tier eligible) for light workloads.
+     - Choose larger types (e.g., `m5.large`) for high-performance needs.
+
+3. Click **Next** to proceed to storage setup.
+
+---
+
+### **Step 4: Configure Storage**
+
+Storage is the space your server uses to store data, much like the hard drive of your computer. In this step, you decide how much space your server needs.
+
+1. Specify the required disk size:
+
+   - **General Purpose (SSD)**: 60 GB is typical for small projects.
+   - For database-heavy workloads, consider **Provisioned IOPS SSD**.
+
+2. Add additional volumes if required, such as:
+   - A **data volume** for file storage.
+   - A **backup volume** for critical data.
+
+---
+
+### **Step 5: Set Up Key Pair**
+
+A key pair is like a lock and key for accessing your server. The server has a lock, and you keep the key (a `.pem` file) on your computer for secure access.
+
+1. Select or create a key pair to secure your instance:
+   - **Existing Key Pair**: Choose from the dropdown if available.
+   - **New Key Pair**:
+     - Click **Create Key Pair**.
+     - Select `.pem` format for most platforms.
+     - Download and store the `.pem` file securely.
+
+⚠️ **Important**: Losing the `.pem` file means you cannot access your instance.
+
+---
+
+### **Step 6: Configure Security Groups**
+
+A security group is like a firewall for your server. It controls who can access your server and which activities are allowed. You'll configure rules here to ensure secure communication.
+
+#### Configuration Steps:
+
+1. Go to the **Security Groups** section under EC2.
+2. Click **Create Security Group** and configure rules:
+
+| **Protocol** | **Port Range** | **Source**        | **Purpose**                 |
+| ------------ | -------------- | ----------------- | --------------------------- |
+| RDP          | 3389           | Your IP / 0.0.0.0 | Remote Desktop Access       |
+| HTTP         | 80             | 0.0.0.0/0         | Enable access to web server |
+| HTTPS        | 443            | 0.0.0.0/0         | Secure web traffic          |
+
+💡 **Best Practice**: Restrict access to your public IP (e.g., `203.0.113.25/32`) instead of `0.0.0.0/0` for security.
+
+---
+
+### **Step 7: Review and Launch Your Instance**
+
+Before launching, you’ll review all settings to ensure everything is configured correctly. After that, AWS will create your server and make it ready to use.
+
+1. Double-check all configurations, including:
+
+   - Instance type
+   - Storage allocation
+   - Security groups
+   - Key pair
+
+2. Click **Launch Instance**.
+3. Wait for the instance to initialize.
+
+---
+
+### **Step 8: Allocate and Associate Elastic IP**
+
+An Elastic IP is a permanent address for your server. Assigning one ensures your server’s address stays the same, even if it restarts.
+
+1. Go to **Elastic IPs** under the EC2 menu.
+2. Click **Allocate Elastic IP Address**.
+3. Associate the allocated IP to your instance:
+   - Select the instance from the dropdown menu.
+   - Save your settings.
+
+🔗 **Why Elastic IP?**: It provides a static IP address that persists even if the instance is stopped or restarted.
+
+---
+
+### **Step 9: Connect to Your Instance**
+
+Once your server is running, you can access it remotely, just like logging into another computer. You’ll use tools like Remote Desktop to do this.
+
+1. Return to the **Instances** tab and copy the **Public IP Address**.
+2. Open **Remote Desktop Connection**:
+
+   - Paste the IP Address.
+   - Enter the username (`Administrator` by default).
+   - Use the private key to decrypt the password in the **RDP Client**.
+
+3. Click **Connect** to access your server.
+
+## 🛠️ Troubleshooting & Best Practices
+
+### **Common Issues and Solutions**
+
+| **Problem**                | **Solution**                                                                  |
+| -------------------------- | ----------------------------------------------------------------------------- |
+| Cannot connect to instance | Check that port 3389 (RDP) is open in the security group.                     |
+| Lost `.pem` file           | Use AWS Systems Manager Session Manager if enabled or recreate your instance. |
+| Instance not starting      | Verify if your instance quota or region availability is sufficient.           |
+
+---
+
+
+## 🌟 Pro Tips for a Seamless Experience
+
+1. **Backups**: Regularly create snapshots of your instance volumes for disaster recovery.
+2. **Monitoring**: Enable **CloudWatch** to monitor instance performance and set alerts for CPU or memory usage spikes.
+3. **Security**: Use **AWS Identity and Access Management (IAM)** to enforce least privilege policies.
+
+---
+
+## 📚 Additional Resources
+
+- [AWS EC2 Documentation](https://docs.aws.amazon.com/ec2/)
+- [AWS Elastic IP Overview](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses.html)
+- [AWS Pricing Calculator](https://calculator.aws/)
+
+---

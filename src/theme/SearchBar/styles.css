@@ -1,0 +1,83 @@
+:root {
+    --docsearch-primary-color: var(--ifm-color-primary);
+    --docsearch-text-color: var(--ifm-font-color-base);
+  }
+  
+  .DocSearch-Button {
+    margin: 0;
+    transition: all var(--ifm-transition-fast)
+      var(--ifm-transition-timing-default);
+  }
+  
+  .DocSearch-Container {
+    z-index: calc(var(--ifm-z-index-fixed) + 1);
+  }
+  
+  .text-primary-100 {
+    --tw-text-opacity: 1;
+    color: #0b4bb7;
+  }
+  
+  .text-primary {
+    --tw-text-opacity: 1;
+    color: #18146c;
+  }
+  
+  .navbar__logo img {
+    height: 140%;
+  }
+  .mt-1 {
+    margin-top: 1.2rem;
+  }
+  
+  @media (min-width: 0px) {
+    .sm\:w-\[440px\] {
+      width: 300px;
+    }
+  }
+  
+  .py-12 {
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+  }
+  .p-6 {
+    padding: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .multiSectionContainer_bYm7 {
+    padding: 3rem;
+  }
+  
+  @media (min-width: 997px) {
+    .lg\:py-20 {
+      padding-top: 5rem;
+      padding-bottom: 8rem;
+    }
+  }
+  
+  .multiSectionContainer_bYm7 {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+  }
+  
+  .section_olD1 {
+    padding: 5rem;
+  }
+  
+  img {
+    border-radius: 0.1rem;
+    padding: 2px;
+  }
+  
+  nav.navbar {
+    border-bottom: 0.5px solid var(--ifm-toc-border-color);
+  }
+  
+  .navbar--fixed-top {
+    position: sticky;
+    top: 1px;
+    z-index: var(--ifm-z-index-fixed);
+  }
+  

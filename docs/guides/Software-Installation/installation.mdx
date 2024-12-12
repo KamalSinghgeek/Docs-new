@@ -1,0 +1,196 @@
+---
+title: Software Installation
+sidebar_position: 2
+---
+
+# 🚀 Fleet Stack Installation on Server
+
+**Install and configure Fleet Stack, the ultimate solution for fleet management. This step-by-step guide ensures a smooth setup process.**
+
+---
+
+## 📘 Quick Overview
+
+Installing Fleet Stack involves:
+
+- **Preparing your environment** by adjusting necessary security settings.
+- **Downloading and installing Fleet Stack** from the official source.
+- **Configuring the software** for first-time use.
+- **Reactivating security** to keep your system safe.
+- **Starting the services** to begin fleet operations.
+
+⏱️ **Estimated Time**: 20–30 minutes
+
+---
+
+## 🚀 Prerequisites
+
+Before starting, ensure you have:
+
+- **A system running Windows OS** with administrative privileges.
+- **An active internet connection** for downloads and registrations.
+- Basic knowledge of Windows security settings.
+
+---
+
+## 🎥 Video Tutorial
+
+Watch a step-by-step video guide for a visual walkthrough:
+
+<div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/J6YWqugB_z0?si=eL-G89C1iJry-mLW"
+    title="AWS Server and Fleet Stack Installation Tutorial"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
+---
+
+## 📂 Step-by-Step Guide
+
+---
+
+### **Step 1: Prepare the Environment**
+
+Setting up your system properly is crucial for a smooth installation. In this step, you’ll install Google Chrome for web-based operations and adjust security settings to avoid interruptions during the setup process.
+
+#### Tasks to Complete:
+
+1. **Install Google Chrome**:
+
+   - Open **Microsoft Edge** (pre-installed on Windows).
+   - Search for **Google Chrome** in your browser.
+   - Download and install Chrome following the on-screen instructions.
+
+2. **Adjust Windows Security Settings**:
+   - Open **Virus & Threat Protection** in **Windows Security**.
+   - Temporarily disable:
+     - **Real-time protection**
+     - **Cloud-delivered protection**
+     - **Automatic sample submission**
+
+💡 **Tip**: Disabling these settings prevents your system from blocking essential files during installation.
+
+---
+
+### **Step 2: Download and Install Fleet Stack**
+
+In this step, you’ll obtain the Fleet Stack software and complete the installation process.
+
+#### Tasks to Complete:
+
+1. **Download Fleet Stack**:
+
+   - Visit the [Fleet Stack Official Website](https://fleetstackglobal.com/) and navigate to the downloads section.
+   - Download the **trial version** or your licensed copy.
+   - Extract the downloaded ZIP folder to a designated location on your system.
+
+2. **Install the Software**:
+   - Open the extracted folder.
+   - Run the installer (`Stack.exe`) and follow the on-screen instructions:
+     - Accept the **License Agreement**.
+     - Choose an **Installation Directory** (default recommended).
+     - Complete the installation process.
+
+⚠️ **Note**: Ensure no antivirus software blocks the installation files.
+
+---
+
+### **Step 3: Configure Fleet Stack**
+
+Configuration ensures Fleet Stack is set up for your business operations. This involves registering your details and accessing the admin panel.
+
+#### Tasks to Complete:
+
+1. **Access the Admin Panel**:
+
+   - Open **Google Chrome**.
+   - Navigate to `http://localhost` in the address bar.
+
+2. **Complete Administration Registration**:
+
+   - Fill in the required details on the registration page:
+     - **Full Name**
+     - **Company Name**
+     - **Country**
+     - **Website**
+     - **Mobile Number**
+     - **Email**
+     - **Username**
+     - **Password**
+
+3. Save the details and proceed to the main dashboard.
+
+💡 **Tip**: Use a secure and memorable password for your Super Admin account.
+
+---
+
+### **Step 4: Enable Windows Security Settings**
+
+After installation, re-enable security settings to protect your system from potential threats.
+
+#### Tasks to Complete:
+
+1. Open **Virus & Threat Protection** in **Windows Security**.
+2. Turn back on the following settings:
+   - **Real-time protection**
+   - **Cloud-delivered protection**
+   - **Automatic sample submission**
+
+💡 **Tip**: Add Fleet Stack's installation directory to the **Allowed Threats List** to prevent accidental blocking by antivirus.
+
+---
+
+### **Step 5: Launch Fleet Stack**
+
+Now that Fleet Stack is installed and configured, you can launch it and begin using its powerful features.
+
+#### Tasks to Complete:
+
+1. **Start Services**:
+
+   - Open the **Fleet Stack Panel** from your desktop or start menu.
+   - Click **Start** to initialize the backend services.
+
+2. **Access Fleet Stack**:
+   - Open **Google Chrome** and navigate to `http://localhost`.
+   - Log in with your **Super Admin** credentials (set during registration).
+
+Fleet Stack is now fully operational and ready for fleet management.
+
+---
+
+### **Step 6: Monitor and Manage Fleet Stack Services**
+
+The Fleet Stack panel provides a centralized interface to manage the application services, web server (IIS), and backend listener service. Use this step to ensure all necessary services are up and running.
+
+#### Tasks to Complete:
+
+1. **Check Current Version**:
+
+   - Review the **Current Version** and **Latest Version** displayed in the panel.
+
+2. **Update Fleet Stack** (if required):
+
+   - Click **Update New** to update to the latest version.
+   - ⚠️ **Warning**: During updates, the production server will not be accessible, and IIS sites will stop temporarily.
+
+3. **Manage Web Server (IIS)**:
+
+   - Ensure the **Status** shows **Running**.
+   - Use the available buttons:
+     - **Stop IIS** to stop the web server.
+     - **Start IIS** to restart operations.
+     - **Restart IIS** if necessary.
+
+4. **Check Backend Listener Service**:
+   - Verify that the **Status** shows **Running**.
+   - Use the **Stop** or **Start** buttons to manage the service.
+
+Fleet Stack is now fully installed, updated, and ready for use. For additional troubleshooting, consult the documentation or contact support.
+
+---
