@@ -419,7 +419,7 @@
     "createdAt": 1678333268,
     "fixes": [],
     "features": [
-      "**Interactive Livestream Release (LL-HLS)** \n 1. Broadcast a meeting to up to 100,000 viewers with low latency of just 3 to 6 seconds.\n 2. Interactive chat and polls. \n 3. Viewers can raise hands to join the stage or the host can invite viewers to join the stage. \n For more information, see [ILS Overview](https://docs.fleetstackglobal.com/guides/livestream/livestream-overview) and [Getting Started with ILS](https://docs.fleetstackglobal.com/guides/livestream/getting-started-with-livestreaming)."
+      "**Interactive Livestream Release (LL-HLS)** \n 1. Broadcast a meeting to up to 100,000 viewers with low latency of just 3 to 6 seconds.\n 2. Interactive chat and polls. \n 3. Viewers can raise hands to join the stage or the host can invite viewers to join the stage. \n For more information, see [ILS Overview](https://docs.fleetstackglobal.com/guides) and [Getting Started with ILS](https://docs.fleetstackglobal.com/guides/livestream/getting-started-with-livestreaming)."
     ],
     "new_api": [
       "A new `DyteStage` module introduced at [meeting.stage](./reference/DyteStage) to manage the stage during livestreaming. \n For more information, see [Livestreaming State Management APIs](https://docs.fleetstackglobal.com/guides/livestream/state-management-apis).",

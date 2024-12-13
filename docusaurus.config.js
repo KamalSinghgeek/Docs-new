@@ -238,61 +238,8 @@ const plugins = [
             ),
           ];
         }
-        /* for everything else */
-        if (path.startsWith('/guides/capabilities')) {
-          return [path.replace('/guides/capabilities', '/guides/features')];
-        }
-        if (path === '/ui-kit') {
-          return [
-            '/javascript/advanced-usage',
-            '/javascript/customize-meeting-ui',
-            '/javascript/events',
-            '/javascript/installation',
-            '/javascript/quickstart',
-            '/javascript/reference/chat-message',
-            '/javascript/reference/connection-config',
-            '/javascript/reference/dyte-client',
-            '/javascript/reference/dyte-control-bar',
-            '/javascript/reference/dyte-errors',
-            '/javascript/reference/dyte-grid',
-            '/javascript/reference/dyte-meeting-events',
-            '/javascript/reference/dyte-plugin',
-            '/javascript/reference/dyte-ui-config',
-            '/javascript/reference/meeting',
-            '/javascript/reference/participant',
-            '/javascript/reference/self-participant',
-            '/javascript/sample-app',
-            '/javascript/usage',
-            '/javascript/virtual-background',
-            '/javascript/',
-          ];
-        }
-        if (path === '/web-application') {
-          return [
-            '/react/advanced-usage',
-            '/react/customize-meeting-ui',
-            '/react/events',
-            '/react/installation',
-            '/react/quickstart',
-            '/react/reference/chat-message',
-            '/react/reference/connection-config',
-            '/react/reference/dyte-client',
-            '/react/reference/dyte-control-bar',
-            '/react/reference/dyte-errors',
-            '/react/reference/dyte-grid',
-            '/react/reference/dyte-meeting-events',
-            '/react/reference/dyte-plugin',
-            '/react/reference/dyte-ui-config',
-            '/react/reference/meeting',
-            '/react/reference/participant',
-            '/react/reference/self-participant',
-            '/react/sample-app',
-            '/react/usage',
-            '/react/virtual-background',
-            '/react/',
-          ];
-        }
-        return undefined; // Return a falsy value: no redirect created
+    
+        return undefined; 
       },
     },
   ],

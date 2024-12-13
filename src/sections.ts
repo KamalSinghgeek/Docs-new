@@ -1,13 +1,4 @@
 import type { ComponentProps, ReactNode } from 'react';
-import {
-  ReactIcon,
-  AngularIcon,
-  AndroidIcon,
-  AppleIcon,
-  FlutterIcon,
-  HTMLIcon,
-  JSIcon,
-} from './icons';
 
 export type Section = { docId: string } & (
   | {
@@ -23,14 +14,12 @@ export type Section = { docId: string } & (
 const SECTIONS: Section[] = [
   {
     name: 'Fleet Stack Pro',
-    docId: 'android',
-    // icon: AndroidIcon,  
+    docId: 'android',  
     section: 'mobile-ui-kit',
   },
   {
     name: 'Fleet Stack Lite',
     docId: 'mobile-application',
-    // icon: ReactIcon,  
     section: 'mobile-ui-kit',
   },
 ];
