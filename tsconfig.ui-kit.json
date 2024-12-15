@@ -16,7 +16,7 @@
     "skipDefaultLibCheck": true,
     "skipLibCheck": true
   },
-  "include": ["node_modules/@dytesdk/ui-kit/dist/types"],
+  "include": ["src/**/*", "types/**/*"],
   "typedocOptions": {
     "name": "Reference",
     "disableSources": true,
@@ -27,7 +27,7 @@
     "sidebar": {
       "categoryLabel": "Reference",
       "position": 10,
-      "fullNames": true,
+      "fullNames": true
     }
   }
 }

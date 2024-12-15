@@ -1,3 +1,20 @@
+# version: 1
+# frontend:
+#   phases:
+#     preBuild:
+#       commands:
+#         - npm ci
+#     build:
+#       commands:
+#         - npm run build
+#   artifacts:
+#     baseDirectory: /build
+#     files:
+#       - '**/*'
+#   cache:
+#     paths:
+#       - node_modules/**/*
+
 version: 1
 frontend:
   phases:
@@ -6,11 +23,10 @@ frontend:
         - npm ci
     build:
       commands:
-        - npm run build
+        - npm run build # Make sure this builds only the frontend assets
   artifacts:
-    baseDirectory: /build
+    baseDirectory: /build # Assumes /build contains the built frontend assets
     files:
-      - '**/*'
+      - '**/*' # Include all files in the /build directory
   cache:
-    paths:
-      - node_modules/**/*
+    paths: [] # Remove caching for node_modules
