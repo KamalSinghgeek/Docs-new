@@ -1,5 +1,5 @@
 ---
-id: Notification
+id: rn-ui-kit-rn-ui-kit-Notification
 title: 'Interface: Notification'
 custom_edit_url: null
 ---

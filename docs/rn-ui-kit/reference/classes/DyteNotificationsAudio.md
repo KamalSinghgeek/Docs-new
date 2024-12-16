@@ -1,5 +1,5 @@
 ---
-id: DyteNotificationsAudio
+id: rn-ui-kit-rn-ui-kit-DyteNotificationsAudio
 title: 'Class: DyteNotificationsAudio'
 custom_edit_url: null
 ---

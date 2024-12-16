@@ -1,5 +1,5 @@
 ---
-id: States
+id: ui-kit-ui-kit-States
 title: 'Interface: States'
 custom_edit_url: null
 ---

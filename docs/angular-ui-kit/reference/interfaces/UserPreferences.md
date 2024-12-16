@@ -1,5 +1,5 @@
 ---
-id: UserPreferences
+id: angular-ui-kit-angular-ui-kit-UserPreferences
 title: 'Interface: UserPreferences'
 custom_edit_url: null
 ---

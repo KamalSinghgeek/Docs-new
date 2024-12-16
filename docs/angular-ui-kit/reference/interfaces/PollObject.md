@@ -1,5 +1,5 @@
 ---
-id: PollObject
+id: angular-ui-kit-angular-ui-kit-PollObject
 title: 'Interface: PollObject'
 custom_edit_url: null
 ---

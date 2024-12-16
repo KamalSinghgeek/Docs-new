@@ -1,5 +1,5 @@
 ---
-id: Notification
+id: angular-ui-kit-angular-ui-kit-Notification
 title: 'Interface: Notification'
 custom_edit_url: null
 ---

@@ -1,5 +1,5 @@
 ---
-id: reference
+id: ui-kit-ui-kit-reference
 title: Reference
 custom_edit_url: null
 sidebar_class_name: hideReferenceSidebarLink

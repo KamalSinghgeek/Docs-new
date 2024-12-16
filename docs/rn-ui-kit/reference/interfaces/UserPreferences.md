@@ -1,5 +1,5 @@
 ---
-id: UserPreferences
+id: rn-ui-kit-rn-ui-kit-UserPreferences
 title: 'Interface: UserPreferences'
 custom_edit_url: null
 ---

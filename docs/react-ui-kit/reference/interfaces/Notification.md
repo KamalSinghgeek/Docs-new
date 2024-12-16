@@ -1,5 +1,5 @@
 ---
-id: Notification
+id: react-ui-kit-react-ui-kit-Notification
 title: 'Interface: Notification'
 custom_edit_url: null
 ---

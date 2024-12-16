@@ -1,5 +1,5 @@
 ---
-id: UIConfig
+id: react-ui-kit-react-ui-kit-UIConfig
 title: 'Interface: UIConfig'
 custom_edit_url: null
 ---

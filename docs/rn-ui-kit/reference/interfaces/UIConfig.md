@@ -1,5 +1,5 @@
 ---
-id: UIConfig
+id: rn-ui-kit-rn-ui-kit-UIConfig
 title: 'Interface: UIConfig'
 custom_edit_url: null
 ---

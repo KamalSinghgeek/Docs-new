@@ -1,5 +1,5 @@
 ---
-id: States
+id: angular-ui-kit-angular-ui-kit-States
 title: 'Interface: States'
 custom_edit_url: null
 ---

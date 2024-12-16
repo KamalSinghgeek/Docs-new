@@ -1,5 +1,5 @@
 ---
-id: States
+id: react-ui-kit-react-ui-kit-States
 title: 'Interface: States'
 custom_edit_url: null
 ---

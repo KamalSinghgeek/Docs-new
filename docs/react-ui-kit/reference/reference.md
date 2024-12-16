@@ -1,5 +1,5 @@
 ---
-id: reference
+id: react-ui-kit-react-ui-kit-reference
 title: Reference
 custom_edit_url: null
 sidebar_class_name: hideReferenceSidebarLink

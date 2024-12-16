@@ -1,5 +1,5 @@
 ---
-id: PollObject
+id: ui-kit-ui-kit-PollObject
 title: 'Interface: PollObject'
 custom_edit_url: null
 ---

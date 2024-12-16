@@ -1,5 +1,5 @@
 ---
-id: UserPreferences
+id: react-ui-kit-react-ui-kit-UserPreferences
 title: 'Interface: UserPreferences'
 custom_edit_url: null
 ---

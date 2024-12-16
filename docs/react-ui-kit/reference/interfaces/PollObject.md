@@ -1,5 +1,5 @@
 ---
-id: PollObject
+id: react-ui-kit-react-ui-kit-PollObject
 title: 'Interface: PollObject'
 custom_edit_url: null
 ---

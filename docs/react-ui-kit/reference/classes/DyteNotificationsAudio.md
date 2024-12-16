@@ -1,5 +1,5 @@
 ---
-id: DyteNotificationsAudio
+id: react-ui-kit-react-ui-kit-DyteNotificationsAudio
 title: 'Class: DyteNotificationsAudio'
 custom_edit_url: null
 ---
