@@ -45,7 +45,7 @@ function Safety({ className }) {
   return (
     <div
       className={clsx(
-        'flex max-w-[418px] flex-row overflow-clip rounded-2xl bg-white dark:bg-[#474747] sm:flex-col sm:pr-0 sm:pb-8 lg:flex-row lg:pr-16 lg:pb-0',
+        'flex max-w-[418px] flex-row overflow-clip rounded-2xl bg-white dark:bg-[#474747] sm:flex-col sm:pb-8 sm:pr-0 lg:flex-row lg:pb-0 lg:pr-16',
         className
       )}
     >
@@ -58,8 +58,6 @@ function Safety({ className }) {
     </div>
   );
 }
-
-
 
 function Links({ name, links, isAccordion }) {
   //To control accordion in footer
@@ -115,7 +113,7 @@ export default function Footer() {
             className="h-9 w-fit lg:h-12"
             sources={{
               light: '/logo/logo.png',
-              dark: '/logo/logo.png',
+              dark: '/logo/dark-logo.png',
             }}
           />
 
