@@ -9,7 +9,7 @@
     // Attach the function to the global scope if needed
     window.showMenu = showMenu;
 
-    // Event delegation for menu interaction
+    // Event delegation for menu interaction (hover)
     document.addEventListener('mouseover', (event) => {
       const menu = event.target.closest('[data-dropdown-sdks-menu]');
       if (menu) {
@@ -27,6 +27,7 @@
         data-dropdown-sdks-menu="web"
         class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
         href="/web-application"
+        onclick="event.preventDefault(); window.location.href='/web-application';"
       >
         <div class="flex-shrink-0">
           <img
@@ -45,6 +46,7 @@
         data-dropdown-sdks-menu="mobile"
         class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
         href="/mobile-application"
+        onclick="event.preventDefault(); window.location.href='/mobile-application';"
       >
         <div class="flex-shrink-0">
           <img
@@ -59,6 +61,6 @@
           </p>
         </div>
       </a>
-    </div>  
+    </div>
   </div>
 </div>
