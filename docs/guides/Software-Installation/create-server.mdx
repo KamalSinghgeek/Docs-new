@@ -3,9 +3,72 @@ title: Create Cloud Server
 sidebar_position: 1
 ---
 
+import Head from '@docusaurus/Head';
+
+<Head>
+  <meta charSet="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Cloud Server - Fleet Stack Guide</title>
+  <meta name="description" content="Learn how to build a secure, scalable, and robust cloud server on AWS with Fleet Stack. Follow our step-by-step guide to configure your instance like a pro." />
+  <meta name="keywords" content="Cloud server, AWS, Fleet Stack, server setup, cloud computing, EC2, AWS instance, cloud deployment, server configuration" />
+  <meta name="author" content="Fleet Stack Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://docs.fleetstackglobal.com/guides/Software-Installation/create-server/" />
+  
+  <!-- Open Graph Metadata for social sharing -->
+  <meta property="og:title" content="Create Cloud Server - Fleet Stack Guide" />
+  <meta property="og:description" content="Learn how to build a secure, scalable, and robust cloud server on AWS with Fleet Stack. Follow our step-by-step guide to configure your instance like a pro." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://docs.fleetstackglobal.com/guides/Software-Installation/create-server/" />
+  <meta property="og:image" content="https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png" />
+  
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Create Cloud Server - Fleet Stack Guide" />
+  <meta name="twitter:description" content="Learn how to build a secure, scalable, and robust cloud server on AWS with Fleet Stack." />
+  <meta name="twitter:image" content="https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png" />
+
+  <!-- Schema.org JSON-LD Markup -->
+
+{' '}
+
+<script type="application/ld+json">
+  {`
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://docs.fleetstackglobal.com/guides/Software-Installation/create-server/"
+        },
+        "headline": "Create Cloud Server - Fleet Stack Guide",
+        "description": "Learn how to build a secure, scalable, and robust cloud server on AWS with Fleet Stack. Follow our step-by-step guide to configure your instance like a pro.",
+        "image": "https://fleetstackglobal.com/assets/img/logo.webp",
+        "author": {
+          "@type": "Organization",
+          "name": "Fleet Stack"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Fleet Stack",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fleetstackglobal.com"
+          }
+        }
+      }
+    `}
+</script>
+
+</Head>
+
 # 🌩️ Create Your Cloud Server
 
 **Build a secure, scalable, and robust cloud server on AWS. This step-by-step guide ensures you configure your instance like a pro.**
+
+---
+
+**Note**: Fleet Stack Software offers you the flexibility to host it on any cloud platform you prefer. This allows you to tailor the deployment to your specific needs, ensuring optimal scalability, performance, and control over your cloud environment.
 
 ---
 
@@ -32,6 +95,7 @@ Before starting, ensure you have:
 - Basic knowledge of AWS terms like EC2, key pairs, and security groups.
 
 ---
+
 ## 🎥 Video Tutorial
 
 Watch a step-by-step video guide for a visual walkthrough:
@@ -47,8 +111,10 @@ Watch a step-by-step video guide for a visual walkthrough:
     allowFullScreen
   ></iframe>
 </div>
---- ---
-## 📂 Step-by-Step Guide
+---
+
+ ## 📂 Step-by-Step Guide
+
 
 ---
 
@@ -83,12 +149,10 @@ An instance is your virtual server. Launching one means you're creating a comput
 2. Fill in the following details:
 
    - **Name**: Choose a recognizable name (e.g., `MyAppServer`).
-   - **OS**: Select your preferred operating system:
+   - **OS**: Select Windows Server operating system:
      - **Windows Server** (default for Remote Desktop).
-     - **Ubuntu** or **Amazon Linux** for Linux users.
    - **Instance Type**:
-     - Start with `t2.micro` (Free Tier eligible) for light workloads.
-     - Choose larger types (e.g., `m5.large`) for high-performance needs.
+     - Start with `t2.medium`.
 
 3. Click **Next** to proceed to storage setup.
 
@@ -133,11 +197,13 @@ A security group is like a firewall for your server. It controls who can access 
 1. Go to the **Security Groups** section under EC2.
 2. Click **Create Security Group** and configure rules:
 
-| **Protocol** | **Port Range** | **Source**        | **Purpose**                 |
-| ------------ | -------------- | ----------------- | --------------------------- |
-| RDP          | 3389           | Your IP / 0.0.0.0 | Remote Desktop Access       |
-| HTTP         | 80             | 0.0.0.0/0         | Enable access to web server |
-| HTTPS        | 443            | 0.0.0.0/0         | Secure web traffic          |
+| **Protocol**         | **Port Range** | **Source** | **Purpose**                 |
+| -------------------- | -------------- | ---------- | --------------------------- |
+| RDP                  | 3389           | 0.0.0.0    | Remote Desktop Access       |
+| HTTP                 | 80             | 0.0.0.0/0  | Enable access to web server |
+| HTTPS                | 443            | 0.0.0.0/0  | Secure web traffic          |
+| Microsoft SQL Server | 1433           | 0.0.0.0/0  | Server for database engine  |
+| Custom TCP           | 5000-6000      | 0.0.0.0/0  | Custom Port Range           |
 
 💡 **Best Practice**: Restrict access to your public IP (e.g., `203.0.113.25/32`) instead of `0.0.0.0/0` for security.
 
@@ -197,7 +263,6 @@ Once your server is running, you can access it remotely, just like logging into 
 | Instance not starting      | Verify if your instance quota or region availability is sufficient.           |
 
 ---
-
 
 ## 🌟 Pro Tips for a Seamless Experience
 
