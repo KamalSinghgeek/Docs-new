@@ -47,17 +47,17 @@ interface SampleProps {
 
 const samples: SampleProps[] = [
   {
-    title: 'GPS Software Installation',
+    title: 'Ultimate GPS Software Installation Guide!',
     platform: 'YouTube',
     demo: 'https://youtu.be/UJ30B4mnxHA?si=1WITniUYwnhCnMA9',
   },
   {
-    title: 'Build your Own GPS Software application',
+    title: 'Build Your Own GPS Software Application!',
     platform: 'YouTube',
     demo: 'https://youtu.be/zMJETWKtDqk?si=vvk12RjVwMOmvA4l',
   },
   {
-    title: 'Fleet Stack White Labeling Guide',
+    title: 'Ultimate Fleet Stack White Labeling Guide!',
     platform: 'YouTube',
     demo: 'https://youtu.be/3fz92PLZvsc?si=STTMCdxfe_DYrbkg',
   },
