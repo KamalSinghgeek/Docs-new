@@ -3,6 +3,129 @@ title: Firebase API
 sidebar_position: 3
 ---
 
+import Head from '@docusaurus/Head';
+
+<Head>
+  <meta charSet="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Firebase API Setup Guide</title>
+  <meta name="description" content="Step-by-step guide to configure the Firebase API for use with Fleet Stack, including setting up your Firebase project, generating API keys, and integrating them into your Fleet Stack application." />
+  <meta name="keywords" content="Firebase API setup, Fleet Stack Firebase integration, Firebase Cloud Messaging, API configuration, software guide" />
+  <meta name="author" content="Fleet Stack Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://docs.fleetstackglobal.com/guides/configuration/firebase-api/" />
+  
+  <!-- Open Graph Metadata for social sharing -->
+  <meta property="og:title" content="Firebase API Setup Guide" />
+  <meta property="og:description" content="Step-by-step guide to configure the Firebase API for use with Fleet Stack, including setting up your Firebase project, generating API keys, and integrating them into your Fleet Stack application." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://docs.fleetstackglobal.com/guides/configuration/firebase-api/" />
+  <meta property="og:image" content="https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png" />
+  
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Firebase API Setup Guide" />
+  <meta name="twitter:description" content="Step-by-step guide to configure the Firebase API for use with Fleet Stack, including setting up your Firebase project, generating API keys, and integrating them into your Fleet Stack application." />
+  <meta name="twitter:image" content="https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png" />
+
+  <!-- Schema.org JSON-LD Markup for TechArticle -->
+
+{' '}
+
+<script type="application/ld+json">
+  {`
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://docs.fleetstackglobal.com/guides/configuration/firebase-api/"
+        },
+        "headline": "Firebase API Setup Guide",
+        "description": "This guide will walk you through the steps to configure the Firebase API for use with Fleet Stack, including setting up your Firebase project, generating API keys, and integrating them into your Fleet Stack application.",
+        "image": "https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png",
+        "author": {
+          "@type": "Organization",
+          "name": "Fleet Stack"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Fleet Stack",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fleetstackglobal.com"
+          }
+        }
+      }
+    `}
+</script>
+
+  <!-- Schema.org JSON-LD Markup for the Guide -->
+
+{' '}
+
+<script type="application/ld+json">
+  {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Firebase API Setup Guide",
+        "description": "Step-by-step guide to configure the Firebase API for use with Fleet Stack, including setting up your Firebase project, generating API keys, and integrating them into your Fleet Stack application.",
+        "mainEntity": [
+          {
+            "@type": "ItemList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Set Up a Firebase Project",
+                "description": "Visit the Firebase Console, add a project, and follow the instructions to create your project."
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Configure Project Settings",
+                "description": "Go to Project Settings, open the Cloud Messaging section, and enable the Cloud Messaging API Key."
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Generate the Key Pair",
+                "description": "In the Cloud Messaging tab, generate the API key needed for your Firebase integration."
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Update Configuration Files",
+                "description": "Navigate to the Fleet Stack web root folder and update the configuration files with the Firebase API key."
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Register the Web Application",
+                "description": "In the Firebase Console, add a web app and register your Fleet Stack application."
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "Add Firebase SDK",
+                "description": "Copy the Firebase SDK code and paste it into the configuration and messaging files in your Fleet Stack project."
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
+                "name": "Enable Server Key in Fleet Stack",
+                "description": "Configure the Firebase Server Key in your Fleet Stack app to enable notifications."
+              }
+            ]
+          }
+        ]
+      }
+    `}
+</script>
+
+</Head>
+
 # 🔥 Firebase API Setup Guide
 
 **This guide will walk you through the steps to configure the Firebase API for use with Fleet Stack, including setting up your Firebase project, generating API keys, and integrating them into your Fleet Stack application.**
