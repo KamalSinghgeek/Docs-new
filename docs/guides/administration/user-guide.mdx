@@ -3,6 +3,189 @@ title: User Guide
 sidebar_position: 7
 ---
 
+import Head from '@docusaurus/Head';
+
+<Head>
+  <meta charSet="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fleet Stack Dashboard and Features Guide</title>
+  <meta name="description" content="Comprehensive guide to managing your fleet with Fleet Stack's dashboard and features, including metrics, tools, and customization options." />
+  <meta name="keywords" content="Fleet Stack dashboard, fleet management, vehicle tracking, driver management, fleet metrics, software guide" />
+  <meta name="author" content="Fleet Stack" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://docs.fleetstackglobal.com/guides/administration/user-guide/" />
+  
+  <!-- Open Graph Metadata for social sharing -->
+  <meta property="og:title" content="Fleet Stack Dashboard and Features Guide" />
+  <meta property="og:description" content="Comprehensive guide to managing your fleet with Fleet Stack's dashboard and features, including metrics, tools, and customization options." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://docs.fleetstackglobal.com/guides/administration/user-guide/" />
+  <meta property="og:image" content="https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png" />
+  
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fleet Stack Dashboard and Features Guide" />
+  <meta name="twitter:description" content="Comprehensive guide to managing your fleet with Fleet Stack's dashboard and features, including metrics, tools, and customization options." />
+  <meta name="twitter:image" content="https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png" />
+
+  <!-- Schema.org JSON-LD Markup for TechArticle -->
+
+{' '}
+
+<script type="application/ld+json">
+  {`
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://docs.fleetstackglobal.com/guides/administration/user-guide/"
+        },
+        "headline": "Fleet Stack Dashboard and Features Guide",
+        "description": "Explore the Fleet Stack dashboard to manage fleet operations efficiently. Learn about key metrics, map tools, trip replays, and admin utilities.",
+        "image": "https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png",
+        "author": {
+          "@type": "Organization",
+          "name": "Fleet Stack"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Fleet Stack",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fleetstackglobal.com"
+          }
+        }
+      }
+    `}
+</script>
+
+  <!-- Schema.org JSON-LD Markup for the Guide -->
+
+{' '}
+
+<script type="application/ld+json">
+  {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Fleet Stack Dashboard and Features Guide",
+        "description": "Comprehensive guide to managing your fleet with Fleet Stack's dashboard and features, including metrics, tools, and customization options.",
+        "mainEntity": [
+          {
+            "@type": "ItemList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Key Metrics",
+                "description": "Monitor fleet status, performance, and recent activity, including total vehicles, status, distance, day/night metrics, and expiring vehicles."
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Quick Navigation",
+                "description": "Access the map or reports directly via dashboard icons for efficient fleet management."
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Email Verification",
+                "description": "Verify your email ID using the verify button on the dashboard to ensure secure communication."
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Map Overview",
+                "description": "View all vehicles in clusters with multiple map options like terrain, hybrid, and satellite for comprehensive tracking."
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Vehicle Details",
+                "description": "Click on a vehicle to see details such as location, IMEI, status, and driver info for detailed insights."
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "Navigation",
+                "description": "Navigate to the vehicle's location or assign drivers to vehicles for streamlined operations."
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
+                "name": "Replay Trips",
+                "description": "View a vehicle's journey with start, end, and stoppage points. Configure map types and labels for detailed analysis."
+              },
+              {
+                "@type": "ListItem",
+                "position": 8,
+                "name": "Daily Logs",
+                "description": "Check daily logs and select data parameters like time, distance, and address for comprehensive tracking."
+              },
+              {
+                "@type": "ListItem",
+                "position": 9,
+                "name": "History View",
+                "description": "Select time ranges to access vehicle history with timelines and trip details for in-depth analysis."
+              },
+              {
+                "@type": "ListItem",
+                "position": 10,
+                "name": "Sensor Configuration",
+                "description": "Configure sensors by defining name, icon, input type, and calculation factors for accurate data collection."
+              },
+              {
+                "@type": "ListItem",
+                "position": 11,
+                "name": "Edit Attributes",
+                "description": "Manage vehicle details like odometer, speed, and distance settings for precise tracking."
+              },
+              {
+                "@type": "ListItem",
+                "position": 12,
+                "name": "Driver Management",
+                "description": "Add, edit, or deactivate drivers. Assign drivers to vehicles for effective fleet management."
+              },
+              {
+                "@type": "ListItem",
+                "position": 13,
+                "name": "Notifications",
+                "description": "Configure overspeed, geofencing, and other notifications to stay informed about fleet activities."
+              },
+              {
+                "@type": "ListItem",
+                "position": 14,
+                "name": "Reports",
+                "description": "Generate and customize reports in PDF, Excel, or CSV formats for detailed analysis and record-keeping."
+              },
+              {
+                "@type": "ListItem",
+                "position": 15,
+                "name": "Reminders",
+                "description": "Set service reminders with mediums like email, SMS, or mobile to ensure timely maintenance."
+              },
+              {
+                "@type": "ListItem",
+                "position": 16,
+                "name": "Expense Tracking",
+                "description": "Log expenses like fuel and repairs, upload bills, and generate reports for financial management."
+              },
+              {
+                "@type": "ListItem",
+                "position": 17,
+                "name": "External Tracking",
+                "description": "Share tracking links with geofencing and driver details for external monitoring."
+              }
+            ]
+          }
+        ]
+      }
+    `}
+</script>
+
+</Head>
+
 # Fleet Stack Dashboard and Features
 
 ---
@@ -23,8 +206,7 @@ Explore key dashboard features, including fleet metrics, map tools, trip replays
     allowFullScreen
   ></iframe>
 </div>
----
-## Dashboard Overview
+--- ## Dashboard Overview
 
 <CardSection
   id="dashboard-overview"
@@ -249,6 +431,7 @@ Explore key dashboard features, including fleet metrics, map tools, trip replays
 </CardSection>
 
 ---
+
 <head>
   <title>Fleet Stack Guide</title>
   <meta
