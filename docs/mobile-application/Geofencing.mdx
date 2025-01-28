@@ -1,5 +1,4 @@
 ---
-
 sidebar_position: 11
 ---
 
@@ -7,17 +6,116 @@ sidebar_position: 11
 
 ---
 
+import Head from '@docusaurus/Head';
+
+<Head>
+  <meta charSet="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fleet Stack Geofencing Guide</title>
+  <meta name="description" content="Learn how to set up and use geofencing in Fleet Stack to monitor vehicle movements and ensure compliance with designated operational zones." />
+  <meta name="keywords" content="Fleet Stack, geofencing, vehicle monitoring, operational zones, fleet security" />
+  <meta name="author" content="Fleet Stack Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://docs.fleetstackglobal.com/mobile-application/Geofencing/" />
+  
+  <!-- Open Graph Metadata for social sharing -->
+  <meta property="og:title" content="Fleet Stack Geofencing Guide" />
+  <meta property="og:description" content="Learn how to set up and use geofencing in Fleet Stack to monitor vehicle movements and ensure compliance with designated operational zones." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://docs.fleetstackglobal.com/mobile-application/Geofencing/" />
+  <meta property="og:image" content="https://docs.fleetstackglobal.com/assets/guide-images/Geofence.png" />
+  
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fleet Stack Geofencing Guide" />
+  <meta name="twitter:description" content="Learn how to set up and use geofencing in Fleet Stack to monitor vehicle movements and ensure compliance with designated operational zones." />
+  <meta name="twitter:image" content="https://docs.fleetstackglobal.com/assets/guide-images/Geofence.png" />
+
+  <!-- Schema.org JSON-LD Markup -->
+
+{' '}
+
+<script type="application/ld+json">
+  {`
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://docs.fleetstackglobal.com/mobile-application/Geofencing/"
+        },
+        "headline": "Fleet Stack Geofencing Guide",
+        "description": "Learn how to set up and use geofencing in Fleet Stack to monitor vehicle movements and ensure compliance with designated operational zones.",
+        "image": "https://docs.fleetstackglobal.com/assets/guide-images/Geofence.png",
+        "author": {
+          "@type": "Organization",
+          "name": "Fleet Stack"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Fleet Stack",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fleetstackglobal.com"
+          }
+        }
+      }
+    `}
+</script>
+
+  <!-- Q&A Schema -->
+
+{' '}
+
+<script type="application/ld+json">
+  {`
+      {
+        "@context": "https://schema.org",
+        "@type": "QAPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does geofencing work in Fleet Stack?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Geofencing allows you to define geographical boundaries for vehicles. When vehicles enter or leave these areas, you receive push notifications, enabling tracking of movements and compliance with operational zones."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I create geofences in Fleet Stack?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Select the area you want to designate as a geofence using the map interface to draw or select the boundary. Enable notifications for when vehicles enter or exit the area."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the benefits of using geofencing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Geofencing helps in monitoring vehicles’ adherence to designated zones, tracking unauthorized movements, and enhancing fleet security and operational control."
+            }
+          }
+        ]
+      }
+    `}
+</script>
+
+</Head>
+
 **Geofencing** is a feature that allows you to define geographical boundaries for your vehicles. When vehicles enter or leave these designated areas, you will receive push notifications, enabling you to track vehicle movements and ensure compliance with operational zones. This feature enhances the security and monitoring capabilities of your fleet.
 
 ---
 
 ### **Steps to Create Geofences**:
 
-1. **Define a geographical boundary for vehicles**: 
+1. **Define a geographical boundary for vehicles**:
+
    - Select the area you want to designate as a geofence. This can be a specific zone such as a city, parking area, or any other region of interest.
    - Use the map interface to draw or select the boundary on the screen.
 
-2. **Set up notifications**: 
+2. **Set up notifications**:
    - Enable notifications for when vehicles enter or exit the geofenced area. You will receive alerts in real time, keeping you informed about vehicle movements and helping you manage fleet activity more effectively.
 
 ---
