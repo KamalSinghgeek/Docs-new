@@ -3,6 +3,117 @@ title: Email SMTP
 sidebar_position: 4
 ---
 
+import Head from '@docusaurus/Head';
+
+<Head>
+  <meta charSet="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email SMTP Configuration Guide</title>
+  <meta name="description" content="Step-by-step guide to setting up SMTP for sending emails using your Gmail account within the Fleet Stack software." />
+  <meta name="keywords" content="Email SMTP configuration, Gmail SMTP setup, Fleet Stack email setup, SMTP settings, software guide" />
+  <meta name="author" content="Fleet Stack Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://docs.fleetstackglobal.com/guides/configuration/email-smtp/" />
+  
+  <!-- Open Graph Metadata for social sharing -->
+  <meta property="og:title" content="Email SMTP Configuration Guide" />
+  <meta property="og:description" content="Step-by-step guide to setting up SMTP for sending emails using your Gmail account within the Fleet Stack software." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://docs.fleetstackglobal.com/guides/configuration/email-smtp/" />
+  <meta property="og:image" content="https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png" />
+  
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Email SMTP Configuration Guide" />
+  <meta name="twitter:description" content="Step-by-step guide to setting up SMTP for sending emails using your Gmail account within the Fleet Stack software." />
+  <meta name="twitter:image" content="https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png" />
+
+  <!-- Schema.org JSON-LD Markup for TechArticle -->
+
+{' '}
+
+<script type="application/ld+json">
+  {`
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://docs.fleetstackglobal.com/guides/configuration/email-smtp/"
+        },
+        "headline": "Email SMTP Configuration Guide",
+        "description": "This guide walks you through setting up SMTP for sending emails using your Gmail account within the Fleet Stack software.",
+        "image": "https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png",
+        "author": {
+          "@type": "Organization",
+          "name": "Fleet Stack"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Fleet Stack",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fleetstackglobal.com"
+          }
+        }
+      }
+    `}
+</script>
+
+  <!-- Schema.org JSON-LD Markup for the Guide -->
+
+{' '}
+
+<script type="application/ld+json">
+  {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Email SMTP Configuration Guide",
+        "description": "Step-by-step guide to setting up SMTP for sending emails using your Gmail account within the Fleet Stack software.",
+        "mainEntity": [
+          {
+            "@type": "ItemList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Access Your Google Account",
+                "description": "Navigate to Google Account Settings and sign in with your Gmail credentials."
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Enable Two-Step Verification",
+                "description": "In the Security settings, enable Two-Step Verification to add an extra layer of security."
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Generate App-Specific Password",
+                "description": "Create an app-specific password for Fleet Stack under the App Passwords section."
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Configure SMTP Settings",
+                "description": "Open Fleet Stack and input the necessary SMTP settings to connect your Gmail account."
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Test SMTP Configuration",
+                "description": "Use the Test SMTP section to send a test email and verify the configuration."
+              }
+            ]
+          }
+        ]
+      }
+    `}
+</script>
+
+</Head>
+
 # 📧 Email SMTP Configuration Guide
 
 This guide walks you through setting up SMTP for sending emails using your Gmail account within the Fleet Stack software.
@@ -15,7 +126,7 @@ To send emails from Fleet Stack, you’ll need to configure the SMTP settings. T
 
 ---
 
-## 📹 Video Tutorial  
+## 📹 Video Tutorial
 
 For a visual walkthrough of the email SMTP configuration process, watch the following tutorial:
 
@@ -40,13 +151,14 @@ For a visual walkthrough of the email SMTP configuration process, watch the foll
 First, you need to access your Google account to configure the necessary settings.
 
 #### Tasks to Complete:
-1. **Go to Google Account Settings**:  
+
+1. **Go to Google Account Settings**:
    - Navigate to [Google Account Settings](https://myaccount.google.com).
-   
-2. **Sign In**:  
+2. **Sign In**:
+
    - Use your Gmail credentials to sign into your Google account.
 
-3. **Manage Gmail Account**:  
+3. **Manage Gmail Account**:
    - Click on **Manage your Gmail account**.
 
 💡 **Tip**: Ensure that you’re logged into the Gmail account that you wish to use for sending emails.
@@ -58,10 +170,12 @@ First, you need to access your Google account to configure the necessary setting
 For added security, you must enable two-step verification.
 
 #### Tasks to Complete:
-1. **Navigate to Security Settings**:  
+
+1. **Navigate to Security Settings**:
+
    - In the left sidebar, click on **Security**.
 
-2. **Enable Two-Step Verification**:  
+2. **Enable Two-Step Verification**:
    - Locate **Two-Step Verification** under the signing-in options and follow the instructions to enable it. This will require you to enter a verification code sent to your phone or email.
 
 💡 **Tip**: This extra layer of security is necessary for generating an app-specific password in the next steps.
@@ -73,14 +187,17 @@ For added security, you must enable two-step verification.
 Once two-step verification is enabled, you'll need to generate an app-specific password for Fleet Stack.
 
 #### Tasks to Complete:
-1. **Navigate to App Passwords**:  
+
+1. **Navigate to App Passwords**:
+
    - Under the **Signing into Google** section, click **App Passwords**.
 
-2. **Create App-Specific Password**:  
+2. **Create App-Specific Password**:
+
    - If **App Passwords** is not visible, ensure **Two-Step Verification** is enabled.
    - Select the app you want to generate the password for (choose “Mail” for email), and then click **Create**.
 
-3. **Copy the Generated Password**:  
+3. **Copy the Generated Password**:
    - Google will display a 16-character app-specific password. Copy and save it securely.
    - **Note**: Google will not display this password again, so make sure to save it before leaving the page.
 
@@ -93,19 +210,22 @@ Once two-step verification is enabled, you'll need to generate an app-specific p
 Now, open Fleet Stack and input the necessary SMTP settings to connect your Gmail account.
 
 #### Tasks to Complete:
-1. **Open Fleet Stack**:  
+
+1. **Open Fleet Stack**:
+
    - Navigate to the **SMTP Configuration** section in the Fleet Stack software.
 
-2. **Fill in the SMTP Details**:  
-   - **Encryption Type**: SSL  
-   - **SMTP Host URL**: smtp.gmail.com  
-   - **SMTP Port**: 587  
-   - **Email**: Enter your Gmail email address  
-   - **Sender Name**: Enter the name you want to display for sent emails  
-   - **Username**: Enter your Gmail email address  
+2. **Fill in the SMTP Details**:
+
+   - **Encryption Type**: SSL
+   - **SMTP Host URL**: smtp.gmail.com
+   - **SMTP Port**: 587
+   - **Email**: Enter your Gmail email address
+   - **Sender Name**: Enter the name you want to display for sent emails
+   - **Username**: Enter your Gmail email address
    - **Password**: Enter the app-specific password generated earlier
 
-3. **Save Configuration**:  
+3. **Save Configuration**:
    - Click **Update SMTP Credentials** to save the settings.
 
 💡 **Tip**: Double-check all entered fields, especially the SMTP host and port settings, to ensure a successful connection.
@@ -117,10 +237,10 @@ Now, open Fleet Stack and input the necessary SMTP settings to connect your Gmai
 Once the SMTP settings are entered, you can test the connection to ensure everything is working correctly.
 
 #### Tasks to Complete:
-1. **Test SMTP**:  
+
+1. **Test SMTP**:
    - Use the **Test SMTP** section to send a test email and verify the configuration.
-   
-2. **Verify Test Email**:  
+2. **Verify Test Email**:
    - Check if you receive the test email in your inbox. If not, review the configuration and try again.
 
 💡 **Tip**: If the test fails, check for common issues like incorrect app passwords or disabled two-step verification.
@@ -136,7 +256,7 @@ Once the SMTP settings are entered, you can test the connection to ensure everyt
 
 ## Conclusion
 
-By following these steps, you will have successfully configured Gmail’s SMTP service for use within Fleet Stack. This will enable email notifications and other email-dependent features in the software. 
+By following these steps, you will have successfully configured Gmail’s SMTP service for use within Fleet Stack. This will enable email notifications and other email-dependent features in the software.
 
 Always remember to keep your credentials secure and update them whenever necessary.
 
