@@ -3,6 +3,151 @@ title: POI(Point of Interest)
 sidebar_position: 7
 ---
 
+import Head from '@docusaurus/Head';
+
+<Head>
+  <meta charSet="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fleet Stack Point of Interest (POI)</title>
+  <meta name="description" content="Comprehensive guide to managing Points of Interest (POI) in Fleet Stack, including creation, editing, and KML import/export." />
+  <meta name="keywords" content="Fleet Stack, POI, point of interest, map visualization, KML import, data management" />
+  <meta name="author" content="Fleet Stack Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://docs.fleetstackglobal.com/web-application/poi/" />
+  
+  <!-- Open Graph Metadata for social sharing -->
+  <meta property="og:title" content="Fleet Stack Point of Interest (POI)" />
+  <meta property="og:description" content="Comprehensive guide to managing Points of Interest (POI) in Fleet Stack, including creation, editing, and KML import/export." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://docs.fleetstackglobal.com/web-application/poi/" />
+  <meta property="og:image" content="https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png" />
+  
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fleet Stack Point of Interest (POI)" />
+  <meta name="twitter:description" content="Comprehensive guide to managing Points of Interest (POI) in Fleet Stack, including creation, editing, and KML import/export." />
+  <meta name="twitter:image" content="https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png" />
+
+  <!-- Schema.org JSON-LD Markup -->
+
+{' '}
+
+<script type="application/ld+json">
+  {`
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://docs.fleetstackglobal.com/web-application/poi/"
+        },
+        "headline": "Fleet Stack Point of Interest (POI)",
+        "description": "Comprehensive guide to managing Points of Interest (POI) in Fleet Stack, including creation, editing, and KML import/export.",
+        "image": "https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png",
+        "author": {
+          "@type": "Organization",
+          "name": "Fleet Stack"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Fleet Stack",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fleetstackglobal.com"
+          }
+        }
+      }
+    `}
+</script>
+
+  <!-- Q&A Schema -->
+
+{' '}
+
+<script type="application/ld+json">
+  {`
+      {
+        "@context": "https://schema.org",
+        "@type": "QAPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I log into Fleet Stack to manage POIs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Log into Fleet Stack using your credentials to begin managing Points of Interest."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I create a new POI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Navigate to the POI option under the Utility menu, search for a location, and click 'Add New Point of Interest' to begin setup."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What details are required to define a POI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Enter the title, description, category, icon type, tolerance, and color of the POI, then click 'Save' to finalize."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I edit or delete a POI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the Edit and Delete buttons to modify or remove existing Points of Interest."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I view POIs on the map?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Select the POI option from the settings tab on the map page to view all POI displayed in clusters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I download a POI list?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click on the 'Download Point of Interest' button to export the POI list in KML format."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I bulk import POIs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the 'Bulk Import Point of Interest' feature to upload a KML file and add multiple POIs at once."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I do if I encounter issues setting up POIs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ensure accurate map navigation and correct data input while creating POIs to avoid errors."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I optimize POI clusters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use clustering to manage large numbers of POIs and enable better map visualization."
+            }
+          }
+        ]
+      }
+    `}
+</script>
+
+</Head>
 # Fleet Stack Point of Interest (POI)
 
 ---
@@ -10,7 +155,6 @@ sidebar_position: 7
 Set up and manage POIs for better map visualization. Create, edit, and delete POIs, view them in clusters on the map, and utilize bulk import/export features. Troubleshoot setup issues and optimize clustering for efficient data management.
 
 ---
-
 
 <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
   <iframe
@@ -131,6 +275,7 @@ Set up and manage POIs for better map visualization. Create, edit, and delete PO
 </CardSection>
 
 ---
+
 <head>
   <title>Fleet Stack Point of Interest (POI)</title>
   <meta
