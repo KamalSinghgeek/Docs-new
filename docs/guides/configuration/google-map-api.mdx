@@ -3,6 +3,129 @@ title: Google Map API
 sidebar_position: 2
 ---
 
+import Head from '@docusaurus/Head';
+
+<Head>
+  <meta charSet="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google Map API Setup Guide</title>
+  <meta name="description" content="Step-by-step guide to create and enable a Google Maps API key with reverse geocoding functionality for integrating Google Maps services into your application." />
+  <meta name="keywords" content="Google Maps API setup, reverse geocoding, Google Cloud Platform, API key creation, software guide" />
+  <meta name="author" content="Fleet Stack Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://docs.fleetstackglobal.com/guides/configuration/google-map-api/" />
+  
+  <!-- Open Graph Metadata for social sharing -->
+  <meta property="og:title" content="Google Map API Setup Guide" />
+  <meta property="og:description" content="Step-by-step guide to create and enable a Google Maps API key with reverse geocoding functionality for integrating Google Maps services into your application." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://docs.fleetstackglobal.com/guides/configuration/google-map-api/" />
+  <meta property="og:image" content="https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png" />
+  
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Google Map API Setup Guide" />
+  <meta name="twitter:description" content="Step-by-step guide to create and enable a Google Maps API key with reverse geocoding functionality for integrating Google Maps services into your application." />
+  <meta name="twitter:image" content="https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png" />
+
+  <!-- Schema.org JSON-LD Markup for TechArticle -->
+
+{' '}
+
+<script type="application/ld+json">
+  {`
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://docs.fleetstackglobal.com/guides/configuration/google-map-api/"
+        },
+        "headline": "Google Map API Setup Guide",
+        "description": "This guide helps you create and enable a Google Maps API key with reverse geocoding functionality. This key allows you to integrate Google Maps services, such as location services, into your application.",
+        "image": "https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png",
+        "author": {
+          "@type": "Organization",
+          "name": "Fleet Stack"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Fleet Stack",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fleetstackglobal.com"
+          }
+        }
+      }
+    `}
+</script>
+
+  <!-- Schema.org JSON-LD Markup for the Guide -->
+
+{' '}
+
+<script type="application/ld+json">
+  {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Google Map API Setup Guide",
+        "description": "Step-by-step guide to create and enable a Google Maps API key with reverse geocoding functionality for integrating Google Maps services into your application.",
+        "mainEntity": [
+          {
+            "@type": "ItemList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Open Google Cloud Console",
+                "description": "Access the Google Cloud Console to manage your API and other resources."
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Create a New Project",
+                "description": "In the Google Cloud Console, create a new project to enable the Google Maps API."
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Enable Geocoding API",
+                "description": "Navigate to APIs & Services > Library, search for Geocoding API, and enable it."
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Create an API Key",
+                "description": "Create an API key to authenticate requests made to the Google Maps API."
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Restrict the API Key",
+                "description": "Set restrictions to ensure your API key is used only by authorized websites or applications."
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "Enable Billing",
+                "description": "Link a billing account to your project to activate API usage."
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
+                "name": "Use the API Key",
+                "description": "Insert the API Key in your application’s code to access Google Maps services."
+              }
+            ]
+          }
+        ]
+      }
+    `}
+</script>
+
+</Head>
+
 # 🗺️ Google Map API Setup Guide
 
 **This guide helps you create and enable a Google Maps API key with reverse geocoding functionality. This key allows you to integrate Google Maps services, such as location services, into your application.**
