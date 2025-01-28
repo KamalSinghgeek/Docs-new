@@ -10,7 +10,7 @@ const helpData = [
       "Contact us for a demo with Fleet Stack's expert. We are looking forward to connecting with you.",
     imgSrc: '/static/landing-page/calendar.svg',
     imgAlt: 'Book a demo with Fleet Stack',
-    linkHref: 'https://fleetstackglobal.com/contact',
+    linkHref: 'https://fleetstackglobal.com/Schedulemeeting',
     linkText: 'Schedule a Call →',
   },
   {
