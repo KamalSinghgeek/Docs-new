@@ -3,13 +3,136 @@ title: Payment Gateway
 sidebar_position: 7
 ---
 
+import Head from '@docusaurus/Head';
+
+<Head>
+  <meta charSet="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Gateway Setup Guide</title>
+  <meta name="description" content="Step-by-step guide to setting up the Razorpay payment gateway in Fleet Stack for seamless transaction handling." />
+  <meta name="keywords" content="Payment gateway setup, Razorpay integration, Fleet Stack payment configuration, transaction handling, software guide" />
+  <meta name="author" content="Fleet Stack Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://docs.fleetstackglobal.com/guides/configuration/payment-gateway/" />
+  
+  <!-- Open Graph Metadata for social sharing -->
+  <meta property="og:title" content="Payment Gateway Setup Guide" />
+  <meta property="og:description" content="Step-by-step guide to setting up the Razorpay payment gateway in Fleet Stack for seamless transaction handling." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://docs.fleetstackglobal.com/guides/configuration/payment-gateway/" />
+  <meta property="og:image" content="https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png" />
+  
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Payment Gateway Setup Guide" />
+  <meta name="twitter:description" content="Step-by-step guide to setting up the Razorpay payment gateway in Fleet Stack for seamless transaction handling." />
+  <meta name="twitter:image" content="https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png" />
+
+  <!-- Schema.org JSON-LD Markup for TechArticle -->
+
+{' '}
+
+<script type="application/ld+json">
+  {`
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://docs.fleetstackglobal.com/guides/configuration/payment-gateway/"
+        },
+        "headline": "Payment Gateway Setup Guide",
+        "description": "This guide walks you through setting up the Razorpay payment gateway in Fleet Stack for seamless transaction handling.",
+        "image": "https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png",
+        "author": {
+          "@type": "Organization",
+          "name": "Fleet Stack"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Fleet Stack",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fleetstackglobal.com"
+          }
+        }
+      }
+    `}
+</script>
+
+  <!-- Schema.org JSON-LD Markup for the Guide -->
+
+{' '}
+
+<script type="application/ld+json">
+  {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Payment Gateway Setup Guide",
+        "description": "Step-by-step guide to setting up the Razorpay payment gateway in Fleet Stack for seamless transaction handling.",
+        "mainEntity": [
+          {
+            "@type": "ItemList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Access the Super Admin Panel",
+                "description": "Log into the Fleet Stack Super Admin Panel using your Super Admin credentials."
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Navigate to Software Configuration",
+                "description": "Access the configuration section to enter your payment details."
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Enter Payment Gateway Details",
+                "description": "Input your Razorpay Merchant ID and Secret Key to enable the payment gateway integration."
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Validate Configuration",
+                "description": "Verify that the Merchant ID and Secret Key are entered correctly."
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Test the Payment Gateway",
+                "description": "Conduct a test transaction using Razorpay’s test environment to ensure everything works as expected."
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "Save Configuration",
+                "description": "After verifying the details, save the configuration to store the payment gateway settings."
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
+                "name": "Monitor and Update as Needed",
+                "description": "Periodically check the settings and update credentials if Razorpay updates their Merchant ID or Secret Key."
+              }
+            ]
+          }
+        ]
+      }
+    `}
+</script>
+
+</Head>
+
 # 💳 Payment Gateway Setup Guide
 
 This guide walks you through setting up the Razorpay payment gateway in Fleet Stack for seamless transaction handling.
 
 ---
 
-## 📹 Video Tutorial  
+## 📹 Video Tutorial
 
 For a visual walkthrough of the payment gateway setup process, watch the following tutorial:
 
@@ -24,19 +147,20 @@ For a visual walkthrough of the payment gateway setup process, watch the followi
     allowFullScreen
   ></iframe>
 </div>
----
-## 📝 Step-by-Step Instructions
+--- ## 📝 Step-by-Step Instructions
 
 ### **Step 1: Access the Super Admin Panel**
 
 To begin the setup process, log into the Fleet Stack Super Admin Panel.
 
 #### Tasks to Complete:
-1. **Log In**:  
+
+1. **Log In**:
+
    - On the login page, click the **Super Admin** button.
    - Enter your Super Admin credentials to log in.
 
-2. **Verify Software Status**:  
+2. **Verify Software Status**:
    - Confirm whether the Fleet Stack software is active or inactive. The status will help you ensure that the system is ready for configuration.
 
 💡 **Tip**: Ensure that you're logged in as a Super Admin, as you’ll need elevated privileges for the payment gateway configuration.
@@ -48,10 +172,10 @@ To begin the setup process, log into the Fleet Stack Super Admin Panel.
 Once logged in, you need to access the configuration section to enter your payment details.
 
 #### Tasks to Complete:
-1. **Go to the Dashboard**:  
+
+1. **Go to the Dashboard**:
    - On the main dashboard, locate and click the **Software Configuration** button.
-   
-2. **Access the Payment Gateway Section**:  
+2. **Access the Payment Gateway Section**:
    - Look for the section dedicated to payment configurations.
 
 💡 **Tip**: If you can't find the **Software Configuration** button, check if your user role has the necessary permissions to access this area.
@@ -63,10 +187,12 @@ Once logged in, you need to access the configuration section to enter your payme
 Now, you’ll need to input your Razorpay credentials to enable the payment gateway integration.
 
 #### Tasks to Complete:
-1. **Razorpay Merchant ID**:  
+
+1. **Razorpay Merchant ID**:
+
    - Enter the **Razorpay Merchant ID** provided by Razorpay. This is a unique identifier for your Razorpay account.
 
-2. **Razorpay Secret Key**:  
+2. **Razorpay Secret Key**:
    - Enter the **Razorpay Secret Key** that you received from Razorpay. This key is used to authenticate the communication between Fleet Stack and Razorpay.
 
 💡 **Tip**: Double-check the Merchant ID and Secret Key to ensure they are entered correctly. Incorrect credentials may cause issues with transaction processing.
@@ -78,10 +204,12 @@ Now, you’ll need to input your Razorpay credentials to enable the payment gate
 Before saving the configuration, it’s important to verify that everything is correct.
 
 #### Tasks to Complete:
-1. **Check Merchant ID**:  
+
+1. **Check Merchant ID**:
+
    - Ensure that the **Merchant ID** is entered exactly as provided by Razorpay.
 
-2. **Check Secret Key**:  
+2. **Check Secret Key**:
    - Verify that the **Secret Key** matches the credentials given by Razorpay.
 
 💡 **Tip**: Even a small typo in the Merchant ID or Secret Key can result in failed transactions. It’s always a good idea to copy and paste these values directly from Razorpay.
@@ -93,10 +221,12 @@ Before saving the configuration, it’s important to verify that everything is c
 It’s highly recommended to test the payment gateway integration to ensure everything works as expected.
 
 #### Tasks to Complete:
-1. **Conduct a Test Transaction**:  
+
+1. **Conduct a Test Transaction**:
+
    - Use **Razorpay’s test environment** or **sandbox mode** to perform a test transaction. This allows you to check the functionality of the integration without processing real payments.
 
-2. **Verify Test Results**:  
+2. **Verify Test Results**:
    - Ensure that the transaction goes through successfully. Check if the correct amount is processed and the payment status updates accordingly.
 
 💡 **Tip**: Testing in the sandbox environment can help you avoid errors in live transactions. Always test thoroughly before going live.
@@ -108,7 +238,8 @@ It’s highly recommended to test the payment gateway integration to ensure ever
 Once you’ve verified the details and tested the integration, save the configuration.
 
 #### Tasks to Complete:
-1. **Click Save**:  
+
+1. **Click Save**:
    - After reviewing and confirming the details, click the **Save** button (or equivalent) to store the payment gateway settings.
 
 💡 **Tip**: Make sure to save your changes before exiting the page to avoid losing your configuration.
@@ -120,10 +251,12 @@ Once you’ve verified the details and tested the integration, save the configur
 Once the payment gateway is set up, it’s important to periodically check the settings.
 
 #### Tasks to Complete:
-1. **Monitor Gateway**:  
+
+1. **Monitor Gateway**:
+
    - Keep an eye on payment transactions to ensure everything is functioning properly.
 
-2. **Update Credentials**:  
+2. **Update Credentials**:
    - If Razorpay updates their credentials (e.g., Merchant ID or Secret Key), make sure to update the settings in Fleet Stack accordingly.
 
 💡 **Tip**: Set a reminder to periodically check Razorpay’s credentials for updates. This ensures that your payment gateway stays active and functional.
