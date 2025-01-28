@@ -3,6 +3,147 @@ title: Geo-Fencing
 sidebar_position: 6
 ---
 
+import Head from '@docusaurus/Head';
+
+<Head>
+  <meta charSet="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fleet Stack Geo-Fencing</title>
+  <meta name="description" content="Comprehensive guide to using the Geo-Fencing feature in Fleet Stack, including setup, cluster visualization, and notification management." />
+  <meta name="keywords" content="Geo-Fencing, Fleet Stack, location monitoring, POI management, notifications, software guide" />
+  <meta name="author" content="Fleet Stack Team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://docs.fleetstackglobal.com/guides/Features-and-Tools/geo-fencing/" />
+  
+  <!-- Open Graph Metadata for social sharing -->
+  <meta property="og:title" content="Fleet Stack Geo-Fencing" />
+  <meta property="og:description" content="Comprehensive guide to using the Geo-Fencing feature in Fleet Stack, including setup, cluster visualization, and notification management." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://docs.fleetstackglobal.com/guides/Features-and-Tools/geo-fencing/" />
+  <meta property="og:image" content="https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png" />
+  
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fleet Stack Geo-Fencing" />
+  <meta name="twitter:description" content="Comprehensive guide to using the Geo-Fencing feature in Fleet Stack, including setup, cluster visualization, and notification management." />
+  <meta name="twitter:image" content="https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png" />
+
+  <!-- Schema.org JSON-LD Markup for TechArticle -->
+
+{' '}
+
+<script type="application/ld+json">
+  {`
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://docs.fleetstackglobal.com/guides/Features-and-Tools/geo-fencing/"
+        },
+        "headline": "Fleet Stack Geo-Fencing",
+        "description": "Set up and manage Geo-Fences effortlessly by creating zones, importing data, and adding POIs. Configure notifications for entry, exit, and stay alerts, optimize map tools, and download Geo-Fence lists for efficient location monitoring.",
+        "image": "https://fleetstackglobal.com/assets/img/Graphics/orginal/Stack01.png",
+        "author": {
+          "@type": "Organization",
+          "name": "Fleet Stack"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Fleet Stack",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://fleetstackglobal.com"
+          }
+        }
+      }
+    `}
+</script>
+
+  <!-- Schema.org JSON-LD Markup for the Guide -->
+
+{' '}
+
+<script type="application/ld+json">
+  {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Fleet Stack Geo-Fencing",
+        "description": "Comprehensive guide to using the Geo-Fencing feature in Fleet Stack, including setup, cluster visualization, and notification management.",
+        "mainEntity": [
+          {
+            "@type": "ItemList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Logging into the Software",
+                "description": "Log into Fleet Stack using your credentials to begin setting up Geo-Fencing."
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Creating a New Geo-Fence",
+                "description": "Click the 'Add New Geo-Fence' button, select the area using a polygon, square, circle, or marker, and fill in the details such as title, description, and tolerance."
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Saving and Viewing Geo-Fences",
+                "description": "Save the Geo-Fence and view it on the map page by selecting the Geo-Fencing option from the settings tab."
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Downloading Geo-Fence Lists",
+                "description": "Download Geo-Fence lists in KML format by clicking on the 'Download Geo-Fence' button."
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Bulk Importing Geo-Fences",
+                "description": "Use the 'Bulk Import Geo-Fence' feature to upload KML files containing Geo-Fence data."
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "Managing Points of Interest",
+                "description": "Add Points of Interest (POI) by marking locations, defining details like title, description, category, and icon color, and save them for display on the map."
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
+                "name": "Downloading and Importing POI",
+                "description": "Download POI lists in KML format or import them using the 'Bulk Import POI' feature."
+              },
+              {
+                "@type": "ListItem",
+                "position": 8,
+                "name": "Setting Up Notifications",
+                "description": "Navigate to the Notifications tab under the Admin section to configure alerts for Geo-Fence entry, exit, and stay duration."
+              },
+              {
+                "@type": "ListItem",
+                "position": 9,
+                "name": "Troubleshooting Geo-Fence Setup",
+                "description": "Ensure proper map navigation and data input while creating Geo-Fences to avoid errors."
+              },
+              {
+                "@type": "ListItem",
+                "position": 10,
+                "name": "Optimizing Geo-Fencing and POI",
+                "description": "Use precise map tools for defining areas and set relevant notification triggers for actionable alerts."
+              }
+            ]
+          }
+        ]
+      }
+    `}
+</script>
+
+</Head>
+
 # Fleet Stack Geo-Fencing
 
 ---
@@ -10,7 +151,6 @@ sidebar_position: 6
 Set up and manage Geo-Fences effortlessly by creating zones, importing data, and adding POIs. Configure notifications for entry, exit, and stay alerts, optimize map tools, and download Geo-Fence lists for efficient location monitoring.
 
 ---
-
 
 <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
   <iframe
@@ -141,6 +281,7 @@ Set up and manage Geo-Fences effortlessly by creating zones, importing data, and
 </CardSection>
 
 ---
+
 <head>
   <title>Fleet Stack Geo-Fencing</title>
   <meta
